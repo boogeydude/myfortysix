@@ -82,10 +82,10 @@ h3 {
   .status-icon {
     font-size: 2rem;
     cursor: pointer;
+    transition: color .2s ease;
 
     &.complete {
       color: $color-primary;
-      transition: color .2s ease;
 
       &:hover {
         color: $color-primary-light;
@@ -94,7 +94,6 @@ h3 {
   
     &.incomplete {
       color: $color-secondary;
-      transition: color .2s ease;
   
       &:hover {
         color: $color-secondary-light;
