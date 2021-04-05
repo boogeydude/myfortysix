@@ -1,0 +1,171 @@
+body {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .15px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .15px;
+}
+
+.navbar {
+  color: $shade-light;
+
+  i {
+    margin-right: .5rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: .15px;
+
+      &:not(:last-of-type) {
+        margin-right: 2rem;
+      }
+
+      .complete-count,
+      .incomplete-count {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.high-peaks-table {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: $shade-dark;
+
+  tr {
+    th {
+      font-size: 1.2rem;
+      font-weight: 300;
+      letter-spacing: .4px;
+      text-align: left;
+      padding: 1.5rem 0;
+
+      & span:hover {
+        cursor: pointer;
+      }
+    }
+
+    td {
+      &:nth-of-type(1) {
+        text-align: center;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+      }
+
+      &:nth-of-type(2) {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .status-icon {
+    font-size: 2rem;
+    cursor: pointer;
+
+    &.complete {
+      color: $color-primary;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  
+    &.incomplete {
+      color: $color-secondary;
+      transition: color .2s ease;
+  
+      &:hover {
+        color: $color-secondary-light;
+      }
+    }
+  }
+
+  .date-completed {
+    &.incomplete {
+      font-weight: 300;
+    }
+  }
+}
+
+.status-form-modal {
+  h2 {
+    color: $color-primary;
+  }
+
+  input[type=date] {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    width: 37.5rem;
+    padding: 1.5rem;
+    color: $shade-dark;
+    background: $shade-light;
+    border: $shade-medium 1px solid;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  .form-buttons {
+    button {
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      width: 12rem;
+      padding: 1.2rem 0;
+      color: $shade-light;
+      background: $color-secondary;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      transition: all .2s ease;
+
+      &:not(:last-of-type) {
+        margin-right: .5rem;
+      }
+
+      &:hover {
+        background: $color-secondary-light;
+      }
+    }
+  }
+
+  .alert-msg {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.25px;
+    color: $shade-dark;
+  }
+}
+
+.footer {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .4px;
+  color: $shade-light;
+}

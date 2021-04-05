@@ -1,25 +1,15 @@
 @media (max-width: 1140px) {
-  header {
-    padding: 0 1.5rem;
-  }
-
   .high-peaks-table {
-    border-top: $medium 1px solid;
+    border-top: $shade-medium 1px solid;
     border-right: 0;
-    border-bottom: $medium 1px solid;
+    border-bottom: $shade-medium 1px solid;
     border-left: 0;
     border-radius: 0;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 540px) {
   html {
-    font-size: 57.5%;
-  }
-}
-
-@media only screen and (max-device-width: 375px) {
-  html { 
-     font-size: 107.5%;
+    font-size: 45%;
   }
 }

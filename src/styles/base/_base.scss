@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba($color-primary-light, 0.5), $color-primary), url(../images/greg-garnhart.jpg) no-repeat fixed center/cover;
+  background-attachment: fixed;
+}

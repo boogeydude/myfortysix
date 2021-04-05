@@ -1,0 +1,48 @@
+.section-status-form-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.status-form-modal {
+  display: none;
+  position: fixed;
+  top: 20vh;
+  z-index: 2;
+  text-align: center;
+  width: 50rem;
+  padding: 2rem;
+  background: $shade-light;
+  border: $shade-medium 1px solid;
+  border-radius: 10px;
+  animation: fadein 0.4s;
+
+  @keyframes fadein {
+    from { 
+      opacity: 0; 
+    }
+
+    to   { 
+      opacity: 1; 
+    }
+  }
+}
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+
+.transparent-cover {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  z-index: 1;
+  width: 100%;
+  height: 100%; 
+  background: #000; 
+  opacity: .7;
+}
