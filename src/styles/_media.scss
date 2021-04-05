@@ -8,7 +8,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media only screen and (max-width: 540px) {
   html {
     font-size: 45%;
   }
