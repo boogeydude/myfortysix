@@ -13,10 +13,21 @@
   border: $shade-medium 1px solid;
   border-radius: 10px;
   border-spacing: 0;
-  box-shadow: 0 .5rem 1rem rgba($shade-dark, 0.2);
+  box-shadow: 0 5px 20px rgba($shade-dark, 0.4);
 
   tr {
     th {
+      padding: 1.5rem 0 .5rem 0;
+    }
+
+    td {
+      padding: 1.5rem 0;
+      border-bottom: $shade-medium 1px solid;
+
+      &:nth-of-type(1) {
+        padding: 0 1.5rem 0 1.5rem;
+      }
+
       &:nth-of-type(2) {
         width: 60%;
       }
@@ -27,17 +38,14 @@
 
       &:nth-of-type(4) {
         width: 20%;
+        padding-right: 1.5rem;
       }
     }
   }
 
-  td {
-    border-bottom: $shade-medium 1px solid;
-  }
-
   & tbody {
     & tr:hover {
-      background: rgba($shade-medium, .2);
+      background: rgba($shade-medium, .4);
     }
 
     & > tr:last-child > td {

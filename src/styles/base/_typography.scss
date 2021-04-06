@@ -60,7 +60,6 @@ h3 {
       font-weight: 300;
       letter-spacing: .4px;
       text-align: left;
-      padding: 2rem 0 .5rem 0;
 
       & span:hover {
         cursor: pointer;
@@ -70,7 +69,6 @@ h3 {
     td {
       &:nth-of-type(1) {
         text-align: center;
-        padding: 2rem;
       }
 
       &:nth-of-type(2) {

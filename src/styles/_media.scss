@@ -1,4 +1,4 @@
-@media (max-width: 1140px) {
+@media (max-width: 960px) {
   .high-peaks-table {
     border-top: $shade-medium 1px solid;
     border-right: 0;
@@ -10,6 +10,6 @@
 
 @media only screen and (max-width: 540px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 }
