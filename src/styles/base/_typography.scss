@@ -9,13 +9,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: .15px;
+  letter-spacing: 0px;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: .15px;
 }
@@ -60,7 +60,7 @@ h3 {
       font-weight: 300;
       letter-spacing: .4px;
       text-align: left;
-      padding: 1.5rem 0;
+      padding: 2rem 0 .5rem 0;
 
       & span:hover {
         cursor: pointer;
@@ -70,7 +70,7 @@ h3 {
     td {
       &:nth-of-type(1) {
         text-align: center;
-        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        padding: 2rem;
       }
 
       &:nth-of-type(2) {
@@ -82,7 +82,7 @@ h3 {
   .status-icon {
     font-size: 2rem;
     cursor: pointer;
-    transition: color .2s ease;
+    transition: all .2s ease;
 
     &.complete {
       color: $color-primary;
@@ -101,10 +101,8 @@ h3 {
     }
   }
 
-  .date-completed {
-    &.incomplete {
-      font-weight: 300;
-    }
+  .date-completed.incomplete {
+    font-weight: 300;
   }
 }
 
@@ -118,7 +116,7 @@ h3 {
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: .5px;
-    width: 37.5rem;
+    width: 38rem;
     padding: 1.5rem;
     color: $shade-dark;
     background: $shade-light;
@@ -131,11 +129,11 @@ h3 {
     button {
       font-family: $font-primary;
       font-size: 1.4rem;
-      font-weight: 400;
+      font-weight: 700;
       letter-spacing: 1.25px;
       text-transform: uppercase;
-      width: 12rem;
-      padding: 1.2rem 0;
+      width: 12.1rem;
+      padding: 1.3rem 0 1.4rem 0;
       color: $shade-light;
       background: $color-secondary;
       border: none;
@@ -157,7 +155,7 @@ h3 {
   .alert-msg {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-top: 0.25px;
+    margin-top: .25px;
     color: $shade-dark;
   }
 }

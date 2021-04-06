@@ -37,7 +37,7 @@
 
   & tbody {
     & tr:hover {
-      background: $shade-medium;
+      background: rgba($shade-medium, .2);
     }
 
     & > tr:last-child > td {
